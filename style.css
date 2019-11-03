@@ -14,6 +14,7 @@
     text-align: center;
     text-decoration: none;
     float: left;
+    font-size: 1.25em;
 }
 .topbar a:hover{
     background-color: #B90504;
@@ -25,47 +26,11 @@
 body{
     background-color: whitesmoke;
 }
-.sidebar{
-    height: inherit;
-    background: #111;
-    position:sticky;
-    top:46px;
-    width: 200px;
-    overflow: auto;
-}
-.sidebar a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    display:block
-}
+
 .text1{
-    margin-left:200px;
     padding: 0px 15px;
     z-index: -1;
-}
-.wrapper{
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    margin: 0px;
-    box-sizing: border-box;
-}
-.column{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-#sidebar2{
-    font-size: 25px;
-    background: #111;
-    position: sticky;
-    width: 25%;
-    top:0;
-}
-#text2{
-    flex-shrink: 0;
-    width: 60%;
+    font-size: 1.15em;
 }
 
 a:link{
@@ -89,7 +54,7 @@ h1{
     font-family: Modesto;
     font-weight: normal;
     font-style: normal;
-    font-size: 80px;
+    font-size: 6em;
     line-height: 5px;
 }
 
