@@ -1,4 +1,4 @@
-
+/*styling the top navigation bar for the website. the position: sticky; tag means the bar will scroll with the page until the page hits it, and then will stick to the top, or however many picels from the top the "top:" tag specifies. it also makes it cross the entire screen, sets the background colour, and makes it so if the content in the bar is greater than the bar can show, the bar will ignore and hide the content exceeding it's limits.*/
 .topbar{
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
     position: sticky;
     top: 0;
     width: 100%;
-    color: #F6F6F6; 
 }
+/*styling links in the "topbar" div specifically. this gives them padding to fill out their surroundings, places them at the centre of their block, makes them stick towards the left of the screen in line, and gives them a font size of 20px.*/
 .topbar a{
     padding: 14px 16px;
     text-align: center;
@@ -16,23 +16,28 @@
     float: left;
     font-size: 1.25em;
 }
+/*basically saying if a link in a topbar div is being hovered over by the mouse, set the colour of the link background to #B90504*/
 .topbar a:hover{
     background-color: #B90504;
 }
+/*if a div has the active class, the background colour is set as #990100. this is how the active page colour was achieved in the navigation bar*/
 .active{
     background-color: #990100;
 }
-
+/*background colour of site, nicer than plain white*/
 body{
     background-color: whitesmoke;
 }
 
+/*adding horizontal padding to the text1 div, setting it back in the z index so other divs will move over it, setting font size and overall screen width.*/
 .text1{
-    padding: 0px 15px;
+    padding: 0px 70px;
     z-index: -1;
     font-size: 1.15em;
+    width: 90%;
 }
 
+/*making the colour of links always this shade of grey/white, whatever happens to them.*/
 a:link{
     color:#F6F6F6;
 }
@@ -45,19 +50,52 @@ a:hover{
 a:active{
     color: #F6F6F6;
 }
+/*changing the font for the main text of the site to Scaly Sans from the folder. code at the bottom of this file*/
 p{
     font-family: Scaly Sans;
     font-weight: 400;
     font-style: normal;
 }
+/*Making my headings Modesto, baby. this is from the fonts I imported from the attacked folder, shown at the bottom of this file.*/
 h1{
     font-family: Modesto;
     font-weight: normal;
     font-style: normal;
     font-size: 6em;
-    line-height: 5px;
+    line-height: 1px;
+}
+/*setting the font for unorderedd lists*/
+ul{
+    font-family: Bookinsanity;
 }
 
+/*I found the (h1) etc headers had too much line height around them, and could not figure out how to decrease this. to get around this i made the"title" div which has the same effect with little extra code*/
+.title{
+    font-family: Mr Eaves;
+    font-size: 2em;
+    font-weight: 400;
+    font-style: bold;
+}
+
+/*This is my styling for images, providing a border, background colour and a framework for captions*/
+figure{
+    padding: 1em;
+    border: 3px solid #990100;
+    text-align: center;
+    text-indent: 0;
+    word-wrap: break-word;
+
+    background-color: #f2f2f2;
+    font-family: Zatanna Misdirection;
+}
+
+iframe{
+    border: 3px solid #990100;
+    padding: 1em;
+    margin: 1em;
+}
+
+/*basically just a bunch of fonts I imported from @solbera-dnd-fonts-master, these are all free to use replicas of the fonts used in teh official D&D books*/
 @font-face{
     font-family: Scaly Sans;
     src: url(solbera-dnd-fonts-master/Scaly\ Sans/Scaly\ Sans.otf);
@@ -77,4 +115,8 @@ h1{
 @font-face{
     font-family: Scaly Sans Caps;
     src:url(solbera-dnd-fonts-master/Scaly\ Sans\ Caps/Scaly\ Sans\ Caps.otf)
+}
+@font-face{
+    font-family: Zatanna Misdirection;
+    src:url(solbera-dnd-fonts-master/Zatanna\ Misdirection/Zatanna\ Misdirection.otf)
 }
